@@ -1,8 +1,15 @@
-FROM python:3.6
+FROM ubuntu:latest
 
-RUN pip install --upgrade pip
-RUN pip install flask
-RUN 
+RUN apt-get update && apt-get install -y
+
+RUN yes | unminimize \
+    apt-get install -y vim \
+    apt-get install -y man
+
+
+
+
+
 
 
 
