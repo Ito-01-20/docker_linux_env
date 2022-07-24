@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     tree \
     iproute2
 
+
 COPY homesize.sh /
 
 CMD ["chmod +x homesize.sh"]
